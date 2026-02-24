@@ -1,39 +1,79 @@
 .bannerParentDiv {
   padding-top: 4em;
 }
-.bannerParentDiv .bannerChildDiv {
-}
+
+
+
 .bannerParentDiv .bannerChildDiv .menuBar {
   display: flex;
   padding: 10px 16px 10px 16px;
 }
 
-.bannerParentDiv .bannerChildDiv .menuBar span {
+
+
+.bannerParentDiv .bannerChildDiv .menuBar .categoryMenu {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .bannerParentDiv .bannerChildDiv .menuBar .categoryMenu span {
-  margin-right: 16px;
-  font-weight: bolder;
+  font-weight: 700;
+  font-size: 14px;
+  color: #002f34;
+  margin-right: 8px;
 }
 
-.bannerParentDiv .bannerChildDiv .menuBar .otherQuickOptions {
+.bannerParentDiv .bannerChildDiv .menuBar .categoryMenu:hover {
+  background-color: rgba(0, 47, 52, 0.05);
 }
+
+.bannerParentDiv .bannerChildDiv .menuBar .categoryMenu:hover span {
+  color: #002f34;
+}
+
+
+
+.bannerParentDiv .bannerChildDiv .menuBar .otherQuickOptions {
+  display: flex;
+  align-items: center;
+}
+
 .bannerParentDiv .bannerChildDiv .menuBar .otherQuickOptions span {
-  padding: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #002f34;
+  font-weight: 400;
+  border-radius: 20px;
+}
+
+.bannerParentDiv .bannerChildDiv .menuBar .otherQuickOptions span:hover {
+  background-color: rgba(0, 47, 52, 0.05);
+  color: #002f34;
 }
 
 .bannerChildDiv .banner {
   position: relative;
   width: 100vw;
 }
-.bannerChildDiv .banner img{
+
+.bannerChildDiv .banner img {
   width: 100vw;
+  transition: transform 0.5s ease;
+}
+
+.bannerChildDiv .banner:hover img {
+  transform: scale(1.02);
 }
 
 @media only screen and (max-width: 700px) {
   .otherQuickOptions {
     display: none;
   }
+
   .bannerChildDiv .banner {
     position: relative;
   }

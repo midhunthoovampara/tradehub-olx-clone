@@ -1,0 +1,204 @@
+﻿
+> olx@0.1.0 start
+> set NODE_OPTIONS=--openssl-legacy-provider&&react-scripts start
+
+node.exe : 
+(node:15612) 
+[DEP0176] 
+DeprecationWarning: 
+fs.F_OK is 
+deprecated, use 
+fs.constants.F_OK 
+instead
+At line:1 char:1
++ & 
+"D:\vsc/node.exe" "C:
+\Users\hp\AppData\Roa
+ming\npm/node_modules
+/npm ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: ((node:1   
+ 5612) [D...ts.F_    
+OK instead:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+(Use `node 
+--trace-deprecation 
+...` to show where 
+the warning was 
+created)
+[34mi[39m [90m∩╜ówds∩╜ú[39m: Project is running at http://192.168.1.13/
+[34mi[39m [90m∩╜ówds∩╜ú[39m: webpack output is served from 
+[34mi[39m [90m∩╜ówds∩╜ú[39m: Content not from webpack is served from C:\Users\hp\React_tutorial_olx_clone\public
+[34mi[39m [90m∩╜ówds∩╜ú[39m: 404s will fallback to /
+Starting the development server...
+
+Browserslist: 
+caniuse-lite is 
+outdated. Please run:
+npx 
+browserslist@latest 
+--update-db
+
+Why you should do it 
+regularly:
+https://github.com/br
+owserslist/browsersli
+st#browsers-data-upda
+ting
+Compiled successfully!
+
+You can now view olx in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.1.13:3000
+
+Note that the development build is not optimized.
+To create a production build, use yarn build.
+
+C:\Users\hp\React_tut
+orial_olx_clone\node_
+modules\watchpack\lib
+\chokidar.js:17
+throw new Error(
+^
+
+Error: No version of 
+chokidar is 
+available. Tried 
+chokidar@2 and 
+chokidar@3.
+You could try to 
+manually install any 
+chokidar version.
+chokidar@3: Error: 
+Cannot find module 
+'chokidar'
+Require stack:
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\watchpack\l
+ib\chokidar.js
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\watchpack\l
+ib\DirectoryWatcher.j
+s
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\watchpack\l
+ib\watcherManager.js
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\watchpack\l
+ib\watchpack.js
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\webpack\lib
+\node\NodeWatchFileSy
+stem.js
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\webpack\lib
+\node\NodeEnvironment
+Plugin.js
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\webpack\lib
+\webpack.js
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\react-scrip
+ts\scripts\start.js
+chokidar@2: Error: 
+Cannot find module 
+'watchpack-chokidar2'
+Require stack:
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\watchpack\l
+ib\chokidar.js
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\watchpack\l
+ib\DirectoryWatcher.j
+s
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\watchpack\l
+ib\watcherManager.js
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\watchpack\l
+ib\watchpack.js
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\webpack\lib
+\node\NodeWatchFileSy
+stem.js
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\webpack\lib
+\node\NodeEnvironment
+Plugin.js
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\webpack\lib
+\webpack.js
+- C:\Users\hp\React_t
+utorial_olx_clone\nod
+e_modules\react-scrip
+ts\scripts\start.js
+
+    at 
+Object.<anonymous> (C
+:\Users\hp\React_tuto
+rial_olx_clone\node_m
+odules\watchpack\lib\
+chokidar.js:17:7)
+    at 
+Module._compile (node
+:internal/modules/cjs
+/loader:1761:14)
+    at Object..js (no
+de:internal/modules/c
+js/loader:1893:10)
+    at Module.load (n
+ode:internal/modules/
+cjs/loader:1481:32)
+    at Module._load (
+node:internal/modules
+/cjs/loader:1300:12)
+    at TracingChannel
+.traceSync (node:diag
+nostics_channel:328:1
+4)
+    at 
+wrapModuleLoad (node:
+internal/modules/cjs/
+loader:245:24)
+    at 
+Module.require (node:
+internal/modules/cjs/
+loader:1504:12)
+    at require (node:
+internal/modules/help
+ers:152:16)
+    at 
+Object.<anonymous> (C
+:\Users\hp\React_tuto
+rial_olx_clone\node_m
+odules\watchpack\lib\
+DirectoryWatcher.js:9
+:16)
+
+Node.js v24.13.0

@@ -1,15 +1,46 @@
 import React from 'react';
+import react,{useEffect,useContext} from 'react' 
 import './App.css';
-
-/**
- * ?  =====Import Components=====
- */
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import Signup from './Pages/Signup'
+import Login from "./Pages/Login"
 import Home from './Pages/Home';
+import Create from './Pages/Create'
+import View from './Pages/ViewPost'
+import { AuthContext, FirebaseContext } from './store/Context';
+import Post from './store/PostContext'
 
 function App() {
+
+  const {setUser} = useContext(AuthContext)
+  const  {firebase} = useContext(FirebaseContext)
+  useEffect(()=>{
+   firebase.auth().onAuthStateChanged((user)=>{
+    setUser(user)
+   })
+
+  })
   return (
     <div>
-      <Home />
+      <Post>
+      <Router>
+        <Route exact path='/'>
+          <Home />
+        </Route>
+        <Route path='/Signup'>
+          <Signup  />
+        </Route>
+        <Route path='/Login'>
+          <Login />
+        </Route>
+        <Route path='/Create'>
+          <Create />
+        </Route>
+        <Route path='/View'>
+          <View />
+        </Route>
+      </Router>
+      </Post>
     </div>
   );
 }
