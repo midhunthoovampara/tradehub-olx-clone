@@ -35,7 +35,7 @@ function Login() {
   return (
     <div>
       <div className="loginParentDiv">
-        <img width="200px" height="200px" src={Logo}></img>
+        <img width="200px" height="200px" src={Logo} alt="OLX Logo"></img>
         <form onSubmit={handleLogin}>
           <label htmlFor="fname">Email</label>
           <br />
@@ -63,9 +63,9 @@ function Login() {
           <button>Login</button>
         </form>
         {error && <p style={{color: 'red', marginTop: '10px'}}>{error}</p>}
-        <a onClick={(()=>{
+        <span className="linkSpan" onClick={(()=>{
           history.push('/Signup')
-        })}>Signup</a>
+        })}>Signup</span>
       </div>
     </div>
   );

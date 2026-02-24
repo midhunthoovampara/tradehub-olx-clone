@@ -1,5 +1,4 @@
-import React from 'react';
-import react,{useEffect,useContext} from 'react' 
+import React, { useEffect, useContext } from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Signup from './Pages/Signup'
@@ -18,8 +17,7 @@ function App() {
    firebase.auth().onAuthStateChanged((user)=>{
     setUser(user)
    })
-
-  })
+  }, [firebase, setUser])
   return (
     <div>
       <Post>

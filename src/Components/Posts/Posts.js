@@ -23,7 +23,7 @@ useEffect(()=>{
      })
       setProducts(allPost)
   })
-},[])
+  },[firebase])
 
 
   return (
@@ -49,7 +49,7 @@ useEffect(()=>{
               <Heart></Heart>
             </div>
             <div className="image">
-              <img src={products.url} alt="" />
+              <img src={products.url} alt="product" />
             </div>
             <div className="content">
               <p className="rate">&#x20B9; {products.Price}</p>
@@ -75,7 +75,7 @@ useEffect(()=>{
               <Heart></Heart>
             </div>
             <div className="image">
-              <img src="/Images/R15V3.jpg" alt="" />
+              <img src="/Images/R15V3.jpg" alt="product" />
             </div>
             <div className="content">
               <p className="rate">&#x20B9; 250000</p>

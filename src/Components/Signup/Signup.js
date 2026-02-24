@@ -57,7 +57,7 @@ export default function Signup() {
   return (
     <div>
       <div className="signupParentDiv">
-        <img width="200px" height="200px" src={Logo}></img>
+        <img width="200px" height="200px" src={Logo} alt="OLX Logo"></img>
         <form onSubmit={handleSumbit}>
           <label htmlFor="fname">Username</label>
           <br />
@@ -111,7 +111,7 @@ export default function Signup() {
           <button>Signup</button>
         </form>
         {error && <p style={{color: 'red'}}>{error}</p>}
-        <a onClick={()=> history.push('/Login')}>Login</a>
+        <span className="linkSpan" onClick={()=> history.push('/Login')}>Login</span>
       </div>
     </div>
   );

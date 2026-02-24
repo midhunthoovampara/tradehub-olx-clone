@@ -31,7 +31,7 @@ const Create = () => {
   return (
     <Fragment>
       <Header />
-      <card>
+      <div className="createCard">
         <div className="centerDiv">
           <form>
             <label htmlFor="fname">Name</label>
@@ -64,7 +64,7 @@ const Create = () => {
             <br />
           </form> 
           <br />
-          <img  alt="Posts" width="200px" height="200px" src={image ? URL.createObjectURL(image): ''}></img>
+          <img alt="Product Preview" width="200px" height="200px" src={image ? URL.createObjectURL(image): ''}></img>
           
             <br />
             <input onChange={(e)=>{
@@ -74,7 +74,7 @@ const Create = () => {
             <button onClick={handleSubmit} className="uploadBtn">upload and Submit</button>
          
         </div>
-      </card>
+      </div>
     </Fragment>
   );
 };
